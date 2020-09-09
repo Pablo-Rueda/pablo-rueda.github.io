@@ -1,0 +1,126 @@
+/* Position */
+.left{
+    left:0;
+    padding-left: 0px;
+    margin-left:0px;
+}
+.right{
+    right:0px;
+    padding-right: 0px;
+    margin-right:0px;
+}
+.top{
+    top:0px;
+    padding-top: 0px;
+    margin-top:0px;
+}
+.botton{
+    bottom:0px;
+    padding-bottom: 0px;
+    margin-bottom:0px;
+}
+
+.center{
+    align-self: center;
+}
+/* container */
+.container{
+    margin: 0px auto;
+    padding: 0;
+    max-width:1280px;
+    width:90%;
+    height: 100%;
+}
+
+.flex-col{   
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+.flex-row{ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+.col{
+    width: 100%;
+}
+// base
+ul{
+    list-style-type: none;
+}
+a{
+    font-family:'Roboto', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+//button remove styling
+button {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+  }
+  
+  button:hover {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+  }
+  
+  button:active {
+    outline: none;
+    border: none;
+  }
+  
+  button:focus {
+    outline: 0;
+  }
+
+
+  // images
+  .proj-img{
+    height:300px;
+    width:300px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    box-shadow:0px 5px 10px 0px black;
+}
+.proj-img:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+    transition:1s;
+}
+
+  section{
+    position:fixed;
+    z-index: 1;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin:0px;
+}
+
+// modify tabs element position
+.lower{
+    position: absolute;
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 750px) {
+    .lower{
+        margin-top: 150px;
+   }
+}
+@media screen and (max-width: 550px) {
+    .lower{
+        margin-top: 170px;
+   }
+}
