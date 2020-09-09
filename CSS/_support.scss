@@ -114,13 +114,27 @@ button {
     margin-top: 200px;
 }
 
+// hide-unhide
+.hide-on-small{
+
+}
+.display-on-small{
+    display:none;
+}
 @media screen and (max-width: 750px) {
     .lower{
         margin-top: 150px;
    }
+
 }
 @media screen and (max-width: 550px) {
     .lower{
-        margin-top: 210px;
+        margin-top: 180px;
    }
+   .hide-on-small{
+    display:none;
+}
+.display-on-small{
+    display:block;
+}
 }

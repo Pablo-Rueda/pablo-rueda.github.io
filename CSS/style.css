@@ -172,6 +172,10 @@ section {
   margin-top: 200px;
 }
 
+.display-on-small {
+  display: none;
+}
+
 @media screen and (max-width: 750px) {
   .lower {
     margin-top: 150px;
@@ -180,7 +184,13 @@ section {
 
 @media screen and (max-width: 550px) {
   .lower {
-    margin-top: 210px;
+    margin-top: 180px;
+  }
+  .hide-on-small {
+    display: none;
+  }
+  .display-on-small {
+    display: block;
   }
 }
 
@@ -500,7 +510,7 @@ p {
 @media screen and (max-width: 750px) {
   .text-wrapper {
     margin-left: 0px;
-    height: 200px;
+    height: 180px;
     padding-bottom: 75px;
   }
 }
