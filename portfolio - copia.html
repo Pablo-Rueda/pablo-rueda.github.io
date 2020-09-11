@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .main-margin{
+            margin-top:75px;
+        }
+        section{
+            overflow: auto;
+        }
+        section .flex-row{ 
+                margin:25px;
+            }
+        @media screen and (max-width: 750px) {
+            .flex-row{
+                flex-direction: column;
+            }
+            section .flex-row{ 
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            .ver-nav-content{
+                display:none;
+            }
+            .main-margin{
+            margin-top:50px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Horizontal Navigation for big screens-->
+        <nav id="sideNavBar" class="nav-wrapper-horizontal left navColor">
+            <a href="javascript:void(0)" class="closebtn" onclick="navBar.closeNav()">&times;</a>
+           <div class="container flex-col">
+            <img class="navImg" src="Images/nav_image.png" alt="Pablo Rueda">
+            <h1>PABLO RUEDA</h1>
+            <ul>
+                <li><a href="index.html">MAIN</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="Pablo Rueda CV.pdf" target="_blank">MY CV
+                    <i class="fas fa-file-download"></i>
+                </a></li>
+            </ul>
+            <h2>CONTACT</h2>
+            <div class="inner-nav-inline">
+              <a href="mailto: pablors-j@hotmail.com"><i class="fas fa-envelope small-icon"></i></a>
+              <a href="https://www.linkedin.com/in/pabloruedas/en" target="_blank"><i class="fab fa-linkedin small-icon"></i></a>
+              <a href="https://github.com/peivol-dot-r" target="_blank"><i class="fab fa-github small-icon"></i></a>
+            </div>
+           </div> 
+        </nav>
+        <!-- Vertical Navigation for small screens-->
+        <nav id="sideNavBar" class="nav-wrapper-vertical top navColor">
+           <div  class="flex-row container">
+            <h1>PABLO RUEDA</h1>
+            <a href="javascript:void(0)" class="hmbg-button" onclick="navBar.expand()">
+            <i class="fa fa-bars"></i>
+             </a>
+            <ul class="ver-nav-content">
+                <li><a href="index.html">MAIN</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="Pablo Rueda CV.pdf" target="_blank">MY CV
+                    <i class="fas fa-file-download"></i>
+                </a></li>
+            </ul>
+            <div class="inner-nav-inline ver-nav-content">
+              <a href="#"><i class="fas fa-envelope small-icon"></i></a>
+              <a href="https://www.linkedin.com/in/pabloruedas/en" target="_blank"><i class="fab fa-linkedin small-icon"></i></a>
+              <a href="https://github.com/peivol-dot-r" target="_blank"><i class="fab fa-github small-icon"></i></a>
+            </div>
+
+           </div>
+        </nav>
+    </header>
+    <span id="openArrow" onclick="navBar.openNav()">
+    <p><i class="fas fa-chevron-right"></i></p>
+    </span>
+    <!-- End of Nav element-->
+    <section>
+        <div class="container use-horizontal-nav">
+        <!-- Personal portfolio-->
+        <h1 class="title main-margin">PORTFOLIO</h1>
+    <p class="main-text"> Throughout the years I have used different software and technologies: Excel, SPSS, R, Mplus, HTML, CSS, SASS, JavaScript among ohters.
+        Below you can find some examples of the projects I have worked on:</p>
+    <div class="flex-row">
+      <a href="https://peivol-dot-r.github.io/Psychology-Materialize-page/" target="_blank"><img class="proj-img" src="Images/psychology.PNG" alt=""></a>
+      <div class="project-content">
+        <h1> Materialize Web-Page </h1>
+        <p> We designed mainly as practise project for Materialize framework. </p>
+        <p>It was build using Materialize and HTML, and some details with CSS and Javascript. </p>
+        <p>
+          <i class="fab fa-html5 mid-icon" style="color:#3366ff;"></i>
+          <i class="fab fa-css3-alt mid-icon" style="color:#e65c00;"></i>
+          <i class="fab fa-js mid-icon" style="color:#cccc00;"></i>
+        </p>
+        <a class="script-link" href="https://github.com/peivol-dot-r/Psychology-Materialize-page" target="_blank"><i class="fab fa-github-alt small-icon"></i> Script </a>
+      </div>
+    </div>
+    <div class="flex-row">
+      <a href="https://peivol-dot-r.github.io/pacman/" target="_blank"><img class="proj-img" src="Images/pacman.PNG" alt=""></a>
+      <div class="project-content">
+        <h1> VANILLA JS PACMAN </h1>
+        <p>Front-end Pacman game to practise applying the OOP principles. </p>
+        <p>It was build using HTML, CSS (+ SASS) and vanilla Javascript. </p>
+        <p class="response">
+          <i class="fab fa-html5 mid-icon" style="color:#3366ff;"></i>
+          <i class="fab fa-css3-alt mid-icon" style="color:#e65c00;"></i>
+          <i class="fab fa-js mid-icon" style="color:#cccc00;"></i>
+          <i class="fab fa-sass mid-icon" style="color:#f859bb;"></i>
+        </p>
+        <a class="script-link" href="https://github.com/peivol-dot-r/pacman" target="_blank"><i class="fab fa-github-alt small-icon"></i> Script </a>
+      </div>
+    </div>
+    <div class="flex-row">
+      <a href="https://peivol-dot-r.github.io/SteamGames2020/" target="_blank"><img class="proj-img" src="Images/SteamGames.PNG" alt=""></a>
+      <div class="project-content">
+        <h1> Data Wrangling </h1>
+        <p>Data Wrangling project using R. The project was tracked using Rmarkdown </p>
+        <p>
+          <i class="fab fa-r-project mid-icon" style="color:#3366ff;"></i>
+        </p>
+        <a class="script-link" href="https://github.com/peivol-dot-r/SteamGames2020" target="_blank"><i class="fab fa-github-alt small-icon"></i> Script </a>
+      </div>
+    </div>
+        </div>
+    </section>
+<script src="script.js"></script>
+
+</body>
+</html>

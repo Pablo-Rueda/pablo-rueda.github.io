@@ -11,9 +11,6 @@
         #Skills{
             display:none;
         }
-        .main-margin{
-            padding-top:130px;
-        }
 
         @media screen and (max-width: 750px) {
             .flex-row{ 
@@ -21,12 +18,6 @@
             }
             .ver-nav-content{
                 display:none;
-            }
-            .main-margin{
-                padding-top:50px;
-            }
-            #main{
-                overflow: auto;
             }
         }
     </style>
@@ -82,49 +73,46 @@
     </span>
     <!-- End of Nav element / Start main section -->
     <section id="main">
-        <div class="grey-overlayer">
-            <div class="container use-horizontal-nav">
-                <div class="flex-row main-margin">     <!-- column distributed -->
-                    <div class="col"> 
-                        <h1 class="title"> Pablo Rueda</h1>
-                        <h2 class="sub-title"> Data analyst, </br>self-taught developer</h2>
-                        <p class="main-text"> "To die like Icarus is better than living without making an effort 
-                            to fly, even if it was with wax wings. Rise, rise up then so you will sprout wings, 
-                            because if you want to fly, they will sprout."</br> 
-                        <i>- Miguel de Unamuno </i></p>
-                    </div>
-                    <div class="col">
-                        <div class="text-wrapper flex-col">
-                            <div id="About" class="tab">
-                                <p> Hi, I'm Pablo, a Data Analyst and self-taught developer. </br> </br> 
-                                    I enjoy learning new things and applying what I learn in 
-                                    new projects. If you would like to work with me, or simply
-                                    you have a good project idea, please contact me!</p>
-                            </div>
-                            <div id="Skills" class="tab">
-                                <p > Right now, I'm in process of learning React (JS),
-                                    Python and SQL while I'm working in some personal projects. Below are the
-                                    technologies that I command:</p>
-                                    <p class="hide-on-small">
-                                        <i class="fab fa-html5 mid-icon" style="color:#3366ff;"></i>
-                                        <i class="fab fa-css3-alt mid-icon" style="color:#e65c00;"></i>
-                                        <i class="fab fa-js mid-icon" style="color:#cccc00;"></i>
-                                        <i class="fab fa-r-project mid-icon" style="color:#3366ff;"></i>
-                                        <i class="fab fa-sass mid-icon" style="color:#f859bb;"></i>
-                                    </p>
-                                    <p class="display-on-small">
-                                        <i class="fab fa-html5 small-icon" style="color:#3366ff;"></i>
-                                        <i class="fab fa-css3-alt small-icon" style="color:#e65c00;"></i>
-                                        <i class="fab fa-js small-icon" style="color:#cccc00;"></i>
-                                        <i class="fab fa-r-project small-icon" style="color:#3366ff;"></i>
-                                        <i class="fab fa-sass small-icon" style="color:#f859bb;"></i>
-                                    </p>
-                            </div>
-
-                            <div class="center lower">
-                                <button class="btn active" onclick="showTab(event,'About')"> About Me </button>
-                                <button class="btn" onclick="showTab(event,'Skills')"> Skills </button>
-                            </div>
+        <div class="container use-horizontal-nav">
+            <div class="flex-row main-margin">     <!-- column distributed -->
+                <div class="col"> 
+                    <h1 class="title"> Pablo Rueda</h1>
+                    <h2 class="sub-title"> Data analyst, </br>self-taught developer</h2>
+                    <p class="main-text"> "To die like Icarus is better than living without making an effort 
+                        to fly, even if it was with wax wings. Rise, rise up then so you will sprout wings, 
+                        because if you want to fly, they will sprout."</br> 
+                    <i>- Miguel de Unamuno </i></p>
+                </div>
+                <div class="col">
+                    <div class="text-wrapper flex-col">
+                        <div id="About" class="tab">
+                            <p> Hi, I'm Pablo, a Data Analyst and self-taught developer. </br> </br> 
+                                I enjoy learning new things and applying what I learn in 
+                                new projects. If you would like to work with me, or simply
+                                you have a good project idea, please contact me!</p>
+                        </div>
+                        <div id="Skills" class="tab">
+                            <p > Right now, I'm in process of learning React (JS),
+                                Python and SQL while I'm working in some personal projects. Below are the
+                                technologies that I command:</p>
+                                <p class="hide-on-small">
+                                    <i class="fab fa-html5 mid-icon" style="color:#3366ff;"></i>
+                                    <i class="fab fa-css3-alt mid-icon" style="color:#e65c00;"></i>
+                                    <i class="fab fa-js mid-icon" style="color:#cccc00;"></i>
+                                    <i class="fab fa-r-project mid-icon" style="color:#3366ff;"></i>
+                                    <i class="fab fa-sass mid-icon" style="color:#f859bb;"></i>
+                                </p>
+                                <p class="display-on-small">
+                                    <i class="fab fa-html5 small-icon" style="color:#3366ff;"></i>
+                                    <i class="fab fa-css3-alt small-icon" style="color:#e65c00;"></i>
+                                    <i class="fab fa-js small-icon" style="color:#cccc00;"></i>
+                                    <i class="fab fa-r-project small-icon" style="color:#3366ff;"></i>
+                                    <i class="fab fa-sass small-icon" style="color:#f859bb;"></i>
+                                </p>
+                        </div>
+                        <div class="center lower">
+                            <button class="btn active" onclick="showTab(event,'About')"> About Me </button>
+                            <button class="btn" onclick="showTab(event,'Skills')"> Skills </button>
                         </div>
                     </div>
                 </div>
