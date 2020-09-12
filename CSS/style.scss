@@ -9,6 +9,10 @@ $secondaryColor:rgb(41, 159, 199);
 @import "./icons";
 @import "./textStyles";
 @import "./portfolio";
+
+.blue{
+    color:$primaryColor;
+}
 #main{
     background-blend-mode: saturation;
     background-image: linear-gradient(black, black), url('../Images/cordoba.jpg');
@@ -24,6 +28,8 @@ $secondaryColor:rgb(41, 159, 199);
     overflow: hidden;
     background-blend-mode: saturation;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: linear-gradient(black, black), url('../Images/cordoba.jpg');
     background-color: rgba(150, 150, 150, 0.5);
 }
