@@ -13,6 +13,13 @@
         }
 
         @media screen and (max-width: 750px) {
+            #main{
+                padding-bottom: 100px;
+                overflow: hidden;
+            }
+            #project-section{
+                padding-top: 50px;
+            }
             .flex-row{ 
                 flex-direction: column;
             }
@@ -31,8 +38,8 @@
             <img class="navImg" src="Images/nav_image.png" alt="Pablo Rueda">
             <h1>PABLO RUEDA</h1>
             <ul>
-                <li><a href="index.html">MAIN</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="#main">MAIN</a></li>
+                <li><a href="#project-section">PORTFOLIO</a></li>
                 <li><a href="Pablo Rueda CV.pdf" target="_blank">MY CV
                     <i class="fas fa-file-download"></i>
                 </a></li>
@@ -53,8 +60,8 @@
             <i class="fa fa-bars"></i>
              </a>
             <ul class="ver-nav-content">
-                <li><a href="index.html">MAIN</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="#main">MAIN</a></li>
+                <li><a href="#project-section">PORTFOLIO</a></li>
                 <li><a href="Pablo Rueda CV.pdf" target="_blank">MY CV
                     <i class="fas fa-file-download"></i>
                 </a></li>
@@ -77,7 +84,7 @@
             <div class="flex-row main-margin">     <!-- column distributed -->
                 <div class="col"> 
                     <h1 class="title"> Pablo Rueda</h1>
-                    <h2 class="sub-title"> Data analyst, </br>self-taught developer</h2>
+                    <h2 class="sub-title"> Web Developer</h2>
                     <p class="main-text"> "To die like Icarus is better than living without making an effort 
                         to fly, even if it was with wax wings. Rise, rise up then so you will sprout wings, 
                         because if you want to fly, they will sprout."</br> 
@@ -101,6 +108,7 @@
                                     <i class="fab fa-js mid-icon" style="color:#cccc00;"></i>
                                     <i class="fab fa-r-project mid-icon" style="color:#3366ff;"></i>
                                     <i class="fab fa-sass mid-icon" style="color:#f859bb;"></i>
+                                    <i class="fab fa-react mid-icon" style="color:#3366ff;"></i>
                                 </p>
                                 <p class="display-on-small">
                                     <i class="fab fa-html5 small-icon" style="color:#3366ff;"></i>
@@ -108,6 +116,7 @@
                                     <i class="fab fa-js small-icon" style="color:#cccc00;"></i>
                                     <i class="fab fa-r-project small-icon" style="color:#3366ff;"></i>
                                     <i class="fab fa-sass small-icon" style="color:#f859bb;"></i>
+                                    <i class="fab fa-react small-icon" style="color:#3366ff;"></i>
                                 </p>
                         </div>
                         <div class="center lower">
@@ -119,6 +128,77 @@
             </div>
         </div>
     </section>
+ <!-- divisor -->
+ <div id="divisor" class="divisor"> </div>
+ <!-- Projects section -->
+ <section id="project-section">
+   <div class="container use-horizontal-nav">
+     <!-- First row of projects-->
+     <div class="flex-row">
+        <div class="flex-col project-content">
+           <h1 class="center">React Web App</h1>
+           <a  class="center" href="https://5f7f90bac946db00ea33da57--fitness-plus.netlify.app/" target="_blank"><img class="proj-img" src="Images/FitnessPlus.PNG" alt=""></a>
+           <div class="proj-text center">
+             <p> React web App created to track users sport performance throught different rounds.
+               It was created using React, Javascript, SASS, CSS and HTML.</br>
+               <a class="blue" href="https://github.com/peivol-dot-r/Fitness-plus"> Script <i class="fab fa-github"></i></a> 
+             </p>
+                <p>
+                  <i class="fab fa-html5 mid-icon" style="color:#3366ff;"></i>
+                  <i class="fab fa-css3-alt mid-icon" style="color:#e65c00;"></i>
+                  <i class="fab fa-js mid-icon" style="color:#cccc00;"></i>
+                  <i class="fab fa-react mid-icon" style="color:#3366ff;"></i>
+                </p>
+           </div>
+        </div>
+        <div class="flex-col project-content">
+           <h1 class="center">Pacman Game </h1>
+           <a  class="center" href="https://peivol-dot-r.github.io/pacman/" target="_blank"><img class="proj-img" src="Images/pacman.PNG" alt=""></a>
+           <div class="proj-text center">
+             <p>Front-end Pacman game to practise applying the OOP principles. It was build using HTML, CSS (+ SASS) and vanilla Javascript. </br>
+               <a class="blue" href="https://github.com/peivol-dot-r/pacman"> Script <i class="fab fa-github"></i></a>
+             </p>
+             <p>
+               <i class="fab fa-html5 mid-icon" style="color:#3366ff;"></i>
+               <i class="fab fa-css3-alt mid-icon" style="color:#e65c00;"></i>
+               <i class="fab fa-js mid-icon" style="color:#cccc00;"></i>
+               <i class="fab fa-sass mid-icon" style="color:#f859bb;"></i>
+             </p>
+           </div>
+         </div>
+     </div> 
+       <!-- Second row of projects-->
+       <div class="flex-row">
+        <div class="flex-col project-content">
+           <h1 class="center">Materialize webpage</h1>
+           <a  class="center" href="https://peivol-dot-r.github.io/Psychology-Materialize-page/" target="_blank"><img class="proj-img" src="Images/psychology.PNG" alt=""></a>
+           <div class="proj-text center">
+             <p> Practise website designed using HTML, Materialize framework, CSS and Javascript.</br>
+               <a class="blue" href="https://github.com/peivol-dot-r/Psychology-Materialize-page"> Script <i class="fab fa-github"></i></a> 
+             </p>
+                <p>
+                  <i class="fab fa-html5 mid-icon" style="color:#3366ff;"></i>
+                  <i class="fab fa-css3-alt mid-icon" style="color:#e65c00;"></i>
+                  <i class="fab fa-js mid-icon" style="color:#cccc00;"></i>
+                </p>
+           </div>
+        </div>
+        <div class="flex-col project-content">
+            <h1 class="center">Data Wrangling</h1>
+            <a class="center" href="https://peivol-dot-r.github.io/SteamGames2020/" target="_blank"><img class="proj-img" src="Images/SteamGames.PNG" alt=""></a>
+            <div class="center proj-text">
+              <p>Data Wrangling project using R. The project was tracked using Rmarkdown. </br>
+                <a class="blue" href="https://github.com/peivol-dot-r/SteamGames2020"> Script <i class="fab fa-github"></i></a>  </p>
+              <p>
+                <i class="fab fa-r-project mid-icon" style="color:#3366ff;"></i>
+              </p>
+            </div>
+         </div>
+     </div> 
+
+ </section>
+ <div id="divisor" class="divisor"> </div>
+
 <script src="script.js"></script>
 
 </body>
