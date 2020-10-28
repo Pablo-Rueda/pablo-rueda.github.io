@@ -6,3 +6,13 @@ nav{
     font-size: 1.6rem; 
   }
 }
+
+.card-content{
+  padding: 0px;
+  margin:0px;
+  .card-title{
+    top:0px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+}
