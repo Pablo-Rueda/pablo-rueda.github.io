@@ -62,6 +62,10 @@ nav li a {
   margin-top: 0px;
 }
 
+.card-image {
+  background-image: cover;
+}
+
 .space-add-1 {
   padding-top: 75px;
 }
@@ -107,6 +111,16 @@ nav li a {
 
 .card-img-size {
   height: 150px;
+}
+
+.logo-small {
+  height: 23px;
+  width: auto;
+}
+
+.logo-large {
+  height: 60px;
+  width: auto;
 }
 
 @media screen and (max-width: 670px) {
